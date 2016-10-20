@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width">
-<title>BuskUs</title>
+<title>Donation</title>
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -22,7 +22,7 @@
             
             <div id ="first">
         <ul>
-             <li><a href="#" ><img class="display" src="images/profileicon.png" alt="logo" width="36px"/>
+             <li><a href="wallet.html" ><img class="display" src="images/profileicon.png" alt="logo" width="36px"/>
                 </a></li>
             
         </ul>
@@ -52,7 +52,7 @@
         <div id ="third">
             <ul>
           
-            <li><a href="#"><img class="display" src="images/discover-01.png" alt="logo" width="36px"/></a></li>
+            <li><a href="discover.html"><img class="display" src="images/discover-01.png" alt="logo" width="36px"/></a></li>
             
         </ul>
             </div><!--third-->
@@ -222,9 +222,11 @@
             
             <div class ="songs3">
                 
-                <a href="#"><img class="display" src="images/commenticon-13.png" alt="logo" height="45px"/></a>
+                <div id="icon1"><a href="#"><img class="display" src="images/commenticon-13.png" alt="logo" height="45px"/></a></div>
                 
-             <a href="#"><img class="display" src="images/gifticon-17.png" alt="logo" height="45px"/></a>
+        <div class="popup" onclick="myFunction()"><img class="display" src="images/gifticon-17.png" alt="logo" height="45px"/>
+  <span class="popuptext" id="myPopup"><img class="display" src="images/donation-27.png" alt="logo" width=100%/></span>
+</div>
             </div><!--end of songs3-->
             
         </div><!--end of songs--></a>
@@ -233,6 +235,58 @@
         <div class ="basespace"></div>
 
         
+
+        
+        
+
+        
+<style>
+
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    margin-left:-311px;
+    visibility: hidden;
+    width: 100%;
+    background-color: none;
+    padding: 10px;
+    position:fixed;
+    bottom:-10px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}  
+
+        
+        </style>        
+        
+        
+        <script>
+      
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+</script>
+   
        
     </div><!--end of container-->
     
